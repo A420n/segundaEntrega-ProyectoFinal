@@ -13,6 +13,12 @@ body::-webkit-scrollbar-thumb{
 	border-radius:100px;
 }
 
+header{
+	width: 100%;
+	position: fixed;
+	z-index: 5;
+}
+
 ul{
 	padding-left:39%;
 }
