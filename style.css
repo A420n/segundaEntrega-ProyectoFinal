@@ -15,12 +15,31 @@ body::-webkit-scrollbar-thumb{
 
 header{
 	width: 100%;
-	position: fixed;
+	position: sticky;
 	z-index: 5;
+	top: 0px;
 }
-
+/*
 ul{
 	padding-left:39%;
+}
+
+
+
+span{
+	font-size:20px;
+	color:#4B464A;
+	text-shadow:1px 1px 2px #fff;
+}
+*/
+
+li{
+	display:inline-block;
+	margin:20px;
+}
+
+nav{
+	background-color:#2a2926;
 }
 
 a{
@@ -34,22 +53,10 @@ a:hover{
 	transition:.5s;
 }
 
-li{
-	display:inline-block;
-	margin-left:20px;
+.stay{
+	font-size: 20px;
+	color: white
 }
-
-nav{
-	background-color:#2a2926;
-	padding:30px;
-}
-
-span{
-	font-size:20px;
-	color:#4B464A;
-	text-shadow:1px 1px 2px #fff;
-}
-
 
 
 
@@ -62,133 +69,10 @@ span{
 
 
 
-.index p{
-	text-align:center;
-	color:white;
-	font-size:30px;
+.j{
+	color: orange;
 }
 
-.index #name{
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	margin:auto;
-}
-
-.index #descripcion{
-	position:absolute;
-	width:40%;
-	text-align:left;
-	top:140px;
-	left:42%;
-}
-
-.index #disc{
-	position:fixed;
-	z-index:-1;
-	top:-480px;
-}
-
-.index #yo{
-	position:absolute;
-	left:19%;
-	right:0px;
-	bottom:0px;
-	top:30px;
-	z-index:1;
-	width:400px;
-}
-
-.index h1{
-	position:absolute;
-	color:white;
-	left:42%;
-	top:40px;
-}
-
-.index .header{
-	position:absolute;
-	top:95%;
-	background-color:#2a2926;
-	width:100%;
-	height:500px;
-}
-
-.index .pics{
-	background-color:#2a2926;
-	position:absolute;
-	top:1400px;
-	bottom:0;
-	left:0;
-	right:0;
-	width:100%;
-	height:630px;
-	padding-left:280px;
-}
-
-.index .pics img{
-	width:265px;
-	border:2px solid #fff;
-}
-
-.index .pics p{
-	text-align:left;
-}
-
-.index .videos{
-	background-color:#2a2926;
-	position:absolute;
-	top:2020px;
-	width:100%;
-	height:900px;
-}
-
-.index .ini{
-	text-align:right;
-	margin-right:10%;
-}
-
-.index .yt{
-	margin-left:36%;
-}
-
-.index .audio{
-	background-color:#2a2926;
-	position:absolute;
-	top:2920px;
-	width:100%;
-	height:650px;
-}
-
-.index .pvht{
-	margin-left:30%;
-	width:40%;
-	height:380px; 
-}
-
-.index .sc{
-	margin-left:550px;
-}
-
-.index .au{
-	text-align:right;
-	margin-right:220px;
-}
-
-.index .otro{
-	display:inline;
-	margin-left:10%;
-	width:40%;
-	height:80px;
-}
-
-.index .veo{
-	display:inline;
-	width:40%;
-	height:80px;
-}
 
 
 
@@ -272,16 +156,17 @@ span{
 	display:inline-block;
 }
 
-.art .imgName p{
+.art .cant p{
 	text-align:center;
 }
 
-.art .Redes{
-	display:inline-block;
+.art .cant{
+	display: flexbox;
+	flex-direction: column-reverse;
 }
 
-.art .cant{
-	margin-bottom:50px;
+.art .fa-brands{
+	text-align: center;
 }
 
 
